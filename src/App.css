@@ -1,0 +1,25 @@
+.main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+h2{
+  font-size: 2.5rem;
+  color: #F5F5F5;
+}
+p{
+  color: #CDFF9C;
+  font-size: 0.75rem;
+  text-align: right;
+}
+button{
+  background-color: #CDFF9C;
+  color: #213C43;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  
+}
