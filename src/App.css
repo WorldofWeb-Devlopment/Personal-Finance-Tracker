@@ -4,6 +4,13 @@
   align-items: center;
   margin-top: 1.5rem;
 }
+body{
+ background-color: #213C43;
+ max-width: 1300px;
+ margin: 0px auto;
+ position: relative;
+
+}
 h2{
   font-size: 2.5rem;
   color: #F5F5F5;
@@ -22,4 +29,130 @@ button{
   font-weight: bold;
   font-size: 1rem;
   
+}
+.popup-positioner {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+.popup-container{
+  width: 800px;
+  background-color:#213C43 ;
+  padding: 20px;
+  border: 1px solid white;
+  pointer-events: auto;
+}
+.add-transaction{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ text-align: left;
+ gap: 20px;
+ 
+}
+.wallet{
+ background-color: #CDFF9C;
+  color:#07272D ;
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.transaction-list{
+  margin-top: 2rem;
+ display: flex;
+flex-wrap: wrap;
+ justify-content: space-around;
+ gap: 30px;
+ padding: 10px;
+ 
+}
+label{
+  color: white;
+  font-family: 'poppins',sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+input[type="text"]{
+  padding: 10px 30px;
+  width: 264px;
+  margin-top: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  
+}
+.date-picker-input {
+  padding-left: 40px !important;
+}
+.react-datepicker-wrapper {
+  display: block;
+}
+.input{
+  position: relative;
+}
+.logo{
+position: absolute;
+top: 45%;
+left: 10px;
+opacity: 0.5;
+pointer-events: none;
+z-index: 1;
+}
+
+select {
+  appearance: none;
+  padding: 10px 44px;
+  width: 264px;
+  margin-top: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;  
+}
+.select-input::after {
+  content: "⌄";
+  position: absolute;
+  top: 30%;
+  right: 14px;
+  transform: translateY(-10%);
+  color: #213C43;
+  font-size: 1.25rem;
+  pointer-events: none;
+}
+
+span{
+  opacity: 0.8;
+  font-weight: 300;
+}
+.full-width{
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.full-width .input {
+  width: 100%;
+}
+.full-width input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 30px 10px 40px;
+}
+.btn{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.cancel{
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  color: #F5F5F5;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  width: 180px;
+}
+.add{
+  width: 180px;
 }

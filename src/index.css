@@ -6,12 +6,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-body{
- background-color: #213C43;
- max-width: 1300px;
- margin: 0px auto;
 
-}
 
 h2,p{
   font-family: 'inter',sans-serif;
