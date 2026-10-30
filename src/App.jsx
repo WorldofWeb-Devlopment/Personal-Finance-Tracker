@@ -1,17 +1,18 @@
 // import React from 'react'
-import { createContext, useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import Popup from './Popup'
 import './index.css'
+import ShowContext from './hooks/ShowContext'
+import Transaction from './Transaction'
 
-const PopupContext = createContext()
+ 
+
 function App() {
   const [show, setShow] = useState(false)
   
   return (
-    <PopupContext.Provider value={{
-      show,setShow
-    }}>
+   <ShowContext.Provider value={{show,setShow}}>
     <div className="main">
       <div>
       <h2>My Finance</h2>
@@ -19,11 +20,13 @@ function App() {
       </div>
       <div>
         <button onClick={()=>setShow(!show)}>Add Transaction</button>
-      </div>
+        </div>
     </div>
+      <Transaction/>
       <Popup/>
-    </PopupContext.Provider>
+   </ShowContext.Provider>
+    
   )
 }
 
-export default App
+export default App;

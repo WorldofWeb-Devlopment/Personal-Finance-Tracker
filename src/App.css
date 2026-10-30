@@ -31,18 +31,21 @@ button{
   
 }
 .popup-positioner {
-  position: fixed;
+position: fixed;
   inset: 0;
   display: grid;
   place-items: center;
-  pointer-events: none;
+  z-index: 1000;
+
 }
 .popup-container{
+position: relative;
+  z-index: 1;
   width: 800px;
-  background-color:#213C43 ;
+  background-color: #213C43;
   padding: 20px;
   border: 1px solid white;
-  pointer-events: auto;
+
 }
 .add-transaction{
   display: flex;
@@ -155,4 +158,11 @@ span{
 }
 .add{
   width: 180px;
+}
+.overlay{
+ position: absolute;
+  inset: 0;
+  background: rgba(7, 39, 45, 0.72);
+  backdrop-filter: blur(5px);
+  z-index: 0;
 }
